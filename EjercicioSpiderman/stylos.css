@@ -1,12 +1,11 @@
 .container{
     width: 500px;
     height: 500px;
-    background-color:rgba(255, 0, 0, 0.699);
+  
     margin: 40px auto;
     overflow: hidden;
-
+animation: container 5s  infinite;
 }
-
 .spiderman{
     width: 200px;
     margin: 0 auto;
@@ -31,4 +30,17 @@
     100%{
         transform: translateY(-50px);
     }
+}
+
+@keyframes container{
+    0% {background-color: steelblue;} /*Amarillo*/
+   25%{background-color:rgba(255, 0, 0, 0.699) ;}
+   50%{background-color: steelblue;}
+   75%{
+    background-color: rgba(255, 0, 0, 0.699);
+   }
+   100% {background-color:steelblue;} /*Otra vez amarillo*/
+ 
+
+  
 }
